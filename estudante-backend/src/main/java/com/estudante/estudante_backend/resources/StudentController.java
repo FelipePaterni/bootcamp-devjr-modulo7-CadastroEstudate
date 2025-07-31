@@ -23,11 +23,10 @@ public class StudentController {
     private List<Student> students = new ArrayList<>();
 
     StudentController() {
-        students.add(new Student(1, "Ana Silva", "ana.silva@email.com", "11999999999", 1, "Manhã"));
-        students.add(new Student(2, "Bruno Souza", "bruno.souza@email.com", "11988888888", 2, "Noite"));
-        students.add(new Student(3, "Carla Pereira", "carla.pereira@email.com", "11977777777", 3, "Manhã"));
+        students.add(new Student(1, "Ana Silva", "ana.silva@email.com", "(11) 999999999", 1, "Manhã"));
+        students.add(new Student(2, "Bruno Souza", "bruno.souza@email.com", "(11) 988888888", 2, "Noite"));
+        students.add(new Student(3, "Carla Pereira", "carla.pereira@email.com", "(11) 977777777", 3, "Manhã"));
     }
-
 
     @GetMapping("students")
     public List<Student> getStudents() {
